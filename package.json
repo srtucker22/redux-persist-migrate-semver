@@ -1,7 +1,7 @@
 {
-  "name": "redux-persist-migrate",
+  "name": "redux-persist-migrate-semver",
   "version": "4.1.0",
-  "description": "migrate your redux state",
+  "description": "migrate your redux state with semver",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha --require babel-register && standard",
@@ -12,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wildlifela/redux-persist-migrate.git"
+    "url": "https://github.com/srtucker22/redux-persist-migrate-semver.git"
   },
-  "homepage": "https://github.com/wildlifela/redux-persist-migrate",
+  "homepage": "https://github.com/srtucker22/redux-persist-migrate-semver",
   "author": "rt2zz <zack@root-two.com>",
   "license": "MIT",
   "dependencies": {
@@ -27,9 +27,6 @@
     "redux-persist-migrate",
     "redux-migrate"
   ],
-  "peerDependencies": {
-    "redux-persist": ">=3.0.0"
-  },
   "devDependencies": {
     "babel-cli": "^6.7.7",
     "babel-eslint": "^6.0.4",
