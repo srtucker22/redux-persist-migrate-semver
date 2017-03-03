@@ -50,7 +50,7 @@ describe('createMigration', () => {
       }
     }
 
-    const initialState = {}
+    const initialState = { app: 3 }
     function test (state = initialState, action) {
       switch (action.type) {
         case REHYDRATE:

@@ -8,7 +8,7 @@
     "build": "babel src --out-dir lib",
     "build:watch": "npm run build ./src -- -watch",
     "clean": "rimraf lib dist",
-    "prepublish": "npm run clean && npm run build"
+    "postinstall": "npm run clean && npm run build"
   },
   "repository": {
     "type": "git",

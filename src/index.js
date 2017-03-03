@@ -39,7 +39,7 @@ export default function createMigration (manifest, {selector, setter, semver = f
 
   const migrate = (state, version) => {
     versionKeys
-      .filter((v) => !version || (semver ? SemVer.gt(v, version) : v > version))
+      .filter((v) => !version || (semver ? !SemVer.valid(version) || SemVer.gt(v, version) : v > version))
       .forEach((v) => { state = manifest[v](state) })
     state = setter(state, currentVersion)
     return state
